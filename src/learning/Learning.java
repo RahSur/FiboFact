@@ -3,7 +3,6 @@ package learning;
 
 import java.util.Scanner;
 
-
 public class Learning {
      Scanner s = new Scanner(System.in);
 
@@ -11,14 +10,12 @@ public class Learning {
  {
       int a=0,b=1;
         System.out.println("Fibo Series");
-        System.out.print("Enter the total number of terms : ");
+        System.out.print("Enter the number of terms to be generated : ");
         int n = s.nextInt();
         System.out.print(a +" "+ b + " ");
         for(int i=1;i<n;i++)
         {
-            int c = a+b;
-            a=b;
-            b=c;
+            int c = a+b; a=b; b=c;
             System.out.print(c+" ");
         }
  }
@@ -32,7 +29,7 @@ public class Learning {
         {
             fn = fn *i;
         }
-        System.out.println("Fact  : " +fn);
+        System.out.println("Factorial  : " +fn);
         
     }
     
@@ -41,9 +38,6 @@ public class Learning {
      Learning ob = new Learning();
      ob.fiboSeries();
      ob.factorial();
-     int i=1;
-     int a = i++;
-        System.out.println(a);
     }
     
 }
